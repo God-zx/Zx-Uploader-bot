@@ -86,9 +86,9 @@ timeout_duration = 300  # 5 minutes
 # Initialize bot with random session
 bot = Client(
     "ugx",
-    api_id=API_ID,
-    api_hash=API_HASH,
-    bot_token=BOT_TOKEN,
+    api_id=34943077,
+    api_hash="11aeec678349456f1d190f02975ed89f",
+    bot_token="8197322664:AAFD1ou2I2rPqYLILjLOxaXh7hWxrME7Puo",
     workers=300,
     sleep_threshold=60,
     in_memory=True
@@ -190,11 +190,11 @@ photozip = 'https://i.ibb.co/v6Vr7HCt/1000003297.png'
 
 
 # Inline keyboard for start command
-BUTTONSCONTACT = InlineKeyboardMarkup([[InlineKeyboardButton(text="📞 Contact", url="https://t.me/ITsGOLU_OWNER_BOT")]])
+BUTTONSCONTACT = InlineKeyboardMarkup([[InlineKeyboardButton(text="📞 Contact", url="https://t.me/SUMIT_ZX_BOT")]])
 keyboard = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/ITsGOLU_OWNER_BOT")        ],
+            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/SUMIT_ZX_BOT")        ],
     ]
 )
 
@@ -241,7 +241,7 @@ async def cookies_handler(client: Client, m: Message):
     except Exception as e:
         await m.reply_text(f"⚠️ An error occurred: {str(e)}")
 
-@bot.on_message(filters.command(["t2t"]))
+@bot.on_message(filters.command(["baby"]))
 async def text_to_txt(client, message: Message):
     user_id = str(message.from_user.id)
     # Inform the user to send the text data and its desired file name
@@ -318,10 +318,10 @@ async def start(bot: Client, m: Message):
             if not is_authorized:
                 await m.reply_photo(
                     photo=photologo,
-                    caption="**Mʏ Nᴀᴍᴇ [DRM Wɪᴢᴀʀᴅ 🦋](https://t.me/ITsGOLU_OWNER_BOT)\n\nYᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴀᴄᴄᴇꜱꜱ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ ʙᴏᴛ\nCᴏɴᴛᴀᴄᴛ [𝐈𝐓'𝐬𝐆𝐎𝐋𝐔.™®](https://t.me/ITsGOLU_OWNER_BOT) ғᴏʀ ᴀᴄᴄᴇꜱꜱ**",
+                    caption="**Mʏ Nᴀᴍᴇ [DRM Wɪᴢᴀʀᴅ 🦋](https://t.me/SUMIT_ZX_BOT)\n\nYᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴀᴄᴄᴇꜱꜱ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ ʙᴏᴛ\nCᴏɴᴛᴀᴄᴛ [𝐈𝐓'𝐬𝐆𝐎𝐋𝐔.™®](https://t.me/ITsGOLU_OWNER_BOT) ғᴏʀ ᴀᴄᴄᴇꜱꜱ**",
                     reply_markup=InlineKeyboardMarkup([
     [
-        InlineKeyboardButton("𝐈𝐓'𝐬𝐆𝐎𝐋𝐔.™®", url="https://t.me/ITsGOLU_OWNER_BOT")
+        InlineKeyboardButton("THE SUMIT.™®", url="https://t.me/SUMIT_ZX_BOT")
     ],
     [
         InlineKeyboardButton("ғᴇᴀᴛᴜʀᴇꜱ 🪔", callback_data="features"),
@@ -347,7 +347,7 @@ async def start(bot: Client, m: Message):
                 caption=f"**Mʏ ᴄᴏᴍᴍᴀɴᴅꜱ ғᴏʀ ʏᴏᴜ [{m.from_user.first_name} ](tg://settings)**\n\n{commands_list}",
                 reply_markup=InlineKeyboardMarkup([
     [
-        InlineKeyboardButton("𝐈𝐓'𝐬𝐆𝐎𝐋𝐔.™®", url="https://t.me/ITsGOLU_OWNER_BOT")
+        InlineKeyboardButton("THE SUMIT.™®", url="https://t.me/SUMIT_ZX_BOT")
     ],
     [
         InlineKeyboardButton("ғᴇᴀᴛᴜʀᴇꜱ 🪔", callback_data="features"),
@@ -392,7 +392,7 @@ async def id_command(client, message: Message):
 
 
 
-@bot.on_message(filters.command(["t2h"]))
+@bot.on_message(filters.command(["baby"]))
 async def call_html_handler(bot: Client, message: Message):
     await html_handler(bot, message)
     
